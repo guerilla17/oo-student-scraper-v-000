@@ -12,11 +12,10 @@ class Scraper
 
   def self.scrape_index_page(index_url)
     
-    # binding.pry
     # It should use Nokogiri and Open-URI to access that page.
     
     index_page = Nokogiri::HTML(open(index_url))
-    
+  
     # The return value of this method should be an array of hashes in which each hash represents a single student.
     
     students = []
