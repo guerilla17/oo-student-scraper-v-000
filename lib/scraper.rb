@@ -8,6 +8,9 @@ require 'pry'
 
 # The #scrape_index_page Method - responsible for scraping the index page that lists all of the students.  Class method.  should take in an argument of the URL of the index page, for the purposes of our test the URL will be "./fixtures/student-site/index.html". 
 
+
+class Scraper  
+
   def self.scrape_index_page(index_url)
 
     doc = Nokogiri::HTML(open(index_url))
