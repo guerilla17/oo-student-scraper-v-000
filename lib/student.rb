@@ -10,7 +10,6 @@ class Student
 
   def initialize(student_hash)
     student_hash.each do |attribute, value|
-      binding.pry  
     self.send("#{attribute}=", value)
 end
     @@all << self  
